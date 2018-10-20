@@ -1,2 +1,5 @@
 *.case
 *-TBD*
+*.in
+*.out
+.DS_Store
