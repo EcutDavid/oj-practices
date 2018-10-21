@@ -1,4 +1,4 @@
-// Hmm, kinda like an #ad-hoc problem https://www.spoj.com/problems/MOZESLS/
+// Hmm, kinda like an #ad-hoc problem
 package main
 
 import (

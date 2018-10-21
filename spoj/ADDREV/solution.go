@@ -1,5 +1,4 @@
 // A simple #ad-hoc problem.
-// https://www.spoj.com/problems/ADDREV/
 package main
 
 import (

@@ -1,4 +1,4 @@
-// A basic #math #newbie problem https://www.spoj.com/problems/CRDS/
+// A basic #math #newbie problem
 package main
 
 import (

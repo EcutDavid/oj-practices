@@ -1,5 +1,4 @@
 // A basic #dynamic-programming problem.
-// https://www.spoj.com/problems/FARIDA/
 package main
 
 import (
