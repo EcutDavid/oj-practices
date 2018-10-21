@@ -1,3 +1,4 @@
+// A basic #math problem
 package main
 
 import (
@@ -15,7 +16,7 @@ func isPrime(num int) bool {
 	if num == 2 {
 		return true
 	}
-	// A slight faster......
+	// A slight faster cuz no need to Sqrt...
 	if num%2 == 0 {
 		return false
 	}
