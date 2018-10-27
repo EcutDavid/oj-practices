@@ -1,5 +1,5 @@
 *.case
-*-TBD*
+*-TBD
 *.in
 *.out
 .DS_Store
