@@ -1,7 +1,7 @@
 Repo for my accepted solutions in online coding judgment platforms like [SPOJ](https://www.spoj.com/), [Google Code Jam](https://codingcompetitions.withgoogle.com/)and [Codeforces](https://codeforces.com/), in Go.
 
 ## The Counter
-Codeforces: 16 problems solved  
+Codeforces: 17 problems solved  
 SPOJ: 13 problems solved  
 
 ## Notes
