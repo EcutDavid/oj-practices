@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"os"
 	"os/exec"
 	"strings"
 )
@@ -72,14 +73,17 @@ func main() {
 		log.Fatal(err)
 	}
 	cmd := exec.Command("git", "add", "-A")
+	cmd.Stdout = os.Stdout
 	if err := cmd.Run(); err != nil {
 		log.Fatal(err)
 	}
 	cmd = exec.Command("git", "commit", "-am", "automated commit from ./publish.go")
+	cmd.Stdout = os.Stdout
 	if err = cmd.Run(); err != nil {
 		log.Fatal(err)
 	}
 	cmd = exec.Command("git", "push")
+	cmd.Stdout = os.Stdout
 	if err = cmd.Run(); err != nil {
 		log.Fatal(err)
 	}
