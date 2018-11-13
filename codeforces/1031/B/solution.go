@@ -1,4 +1,7 @@
 // Spent more than 4 hours...... Hmm...
+// Two key observations that came along the way are:
+// 	1. This main problem can be solved with two subproblems: can we construct the t for the first bit & the second?
+// 	2. Can leave the tricky undetermined bit pattern at the end to solve.
 package main
 
 import (
