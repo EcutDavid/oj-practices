@@ -3,6 +3,7 @@ Repo for my accepted solutions in online coding judgment platforms like [SPOJ](h
 ## The Counter
 Codeforces: 25 problems solved  
 SPOJ: 13 problems solved  
+Code Jam: 2 problems solved  
 
 ## Notes
 26/10/2018: switched from spoj to codeforces due to it's more suited for me
