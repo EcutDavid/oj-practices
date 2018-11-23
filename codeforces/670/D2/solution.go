@@ -9,8 +9,11 @@ import (
 
 func main() {
 	n, k, scanner := 0, 0, bufio.NewScanner(os.Stdin)
-	fmt.Scan(&n, &k)
 	scanner.Split(bufio.ScanWords)
+	scanner.Scan()
+	n, _ = strconv.Atoi(scanner.Text())
+	scanner.Scan()
+	k, _ = strconv.Atoi(scanner.Text())
 	a, b := make([]int, n), make([]int, n)
 	for i := 0; i < n; i++ {
 		scanner.Scan()
@@ -21,11 +24,12 @@ func main() {
 		b[i], _ = strconv.Atoi(scanner.Text())
 	}
 
-	answer, l, r := -1, 0, 2000
+	// Without int64, (l+r)/2 will break.
+	answer, l, r := -1, int64(0), int64(2000000000)
 	for l <= r {
-		mid, match, newK := (l+r)/2, false, k
+		mid, match, newK := (l+r)/2, false, int64(k)
 		for i := 0; i < len(a); i++ {
-			extra := a[i]*mid - b[i]
+			extra := int64(a[i])*mid - int64(b[i])
 			if extra > newK {
 				break
 			} else if extra > 0 {
@@ -37,7 +41,7 @@ func main() {
 		}
 		if match {
 			l = mid + 1
-			answer = mid
+			answer = int(mid)
 		} else {
 			r = mid - 1
 		}
