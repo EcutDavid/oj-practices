@@ -1,9 +1,9 @@
 Repo for my accepted solutions in online coding judgment platforms like [SPOJ](https://www.spoj.com/), [Google Code Jam](https://codingcompetitions.withgoogle.com/) and [Codeforces](https://codeforces.com/).
 
 ## The Counter
-Codeforces: 49 problems solved
-SPOJ: 13 problems solved
-Code Jam: 3 problems solved
+Codeforces: 50 problems solved  
+SPOJ: 13 problems solved  
+Code Jam: 3 problems solved  
 
 ## Notes
 27/10/2018: made `./publish.go` for fun and encouraging.
