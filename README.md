@@ -3,7 +3,7 @@ Repo for my accepted solutions in online coding judgment platforms like [SPOJ](h
 ## The Counter
 Codeforces: 56 problems solved  
 SPOJ: 13 problems solved  
-Code Jam: 3 problems solved  
+Code Jam: 4 problems solved  
 
 ## Notes
 27/10/2018: made `./publish.go` for fun and encouraging.
