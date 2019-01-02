@@ -1,9 +1,14 @@
 Repo for my accepted solutions in online coding judgment platforms like [SPOJ](https://www.spoj.com/), [Google Code Jam](https://codingcompetitions.withgoogle.com/) and [Codeforces](https://codeforces.com/).
 
+## Project Euler
+I'm also working on solving project Euler problems on hackerrank, why not projecteuler.net? Because hackerrank get hidden test cases that I'm more confident that my solution indeed works when get accepeted(instead of happening to work on some edge case since projecteuler.net only gives one test case).
+Here is the process: https://www.hackerrank.com/results/projecteuler/davidguandev
+It's mentioned in projecteuler.net that anyone should not open source their solution openly(the reason I'm not open source the project Euler solutions), so if you interested in solution for some problems plz talk to me privately :)
+
 ## The Counter
-Codeforces: 68 problems solved  
-SPOJ: 13 problems solved  
-Code Jam: 5 problems solved  
+Codeforces: 68 problems solved
+SPOJ: 13 problems solved
+Code Jam: 5 problems solved
 
 ## Notes
 27/10/2018: made `./publish.go` for fun and encouraging.
