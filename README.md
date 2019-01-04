@@ -1,7 +1,7 @@
 Repo for my accepted solutions in online coding judgment platforms like [Codeforces](https://codeforces.com/), [Google Code Jam](https://codingcompetitions.withgoogle.com/) and [SPOJ](https://www.spoj.com/).
 
 ## Project Euler
-I'm also working on solving project Euler problems on hackerrank. 
+I'm also working on solving Project Euler problems on hackerrank.   
 Why not projecteuler.net? 
 * Hackerrank get hidden test cases, reducing the possibility of "a broken solution but happen to produce correct answer for a single test case"(projecteuler.net has one test case per problem).  
 * Hackerrank, as many other OJ platform, has a time limitation, which provides the incentive for producing low time-complexity solutions.
