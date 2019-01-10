@@ -1,12 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
-func max(a, b int) int {
-	if a > b {
-		return a
+func max(nums ...int) int {
+	res := math.MinInt32
+	for _, num := range nums {
+		if num > res {
+			res = num
+		}
 	}
-	return b
+	return res
 }
 
 func main() {
