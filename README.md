@@ -1,16 +1,17 @@
 Repo for my accepted solutions in online coding judgment platforms like [Codeforces](https://codeforces.com/), [Google Code Jam](https://codingcompetitions.withgoogle.com/) and [SPOJ](https://www.spoj.com/).
 
 ## Project Euler
-I'm also working on solving Project Euler problems on hackerrank.   
-Why not projecteuler.net? 
-* Hackerrank get hidden test cases, reducing the possibility of "a broken solution but happen to produce correct answer for a single test case"(projecteuler.net has one test case per problem).  
+I'm also working on solving Project Euler problems on hackerrank.
+Why not projecteuler.net?
+* Hackerrank get hidden test cases, reducing the possibility of "a broken solution but happen to produce correct answer for a single test case"(projecteuler.net has one test case per problem).
 * Hackerrank, as many other OJ platform, has a time limitation, which provides the incentive for producing low time-complexity solutions.
-  
-Here is the process: https://www.hackerrank.com/results/projecteuler/davidguandev  
+
+Here is the process: https://www.hackerrank.com/results/projecteuler/davidguandev
+
 It's mentioned in projecteuler.net that anyone should not open source their solution(so I'm not open source the solutions here), if you interested in my solutions, plz talk to me privately, I can send them to you but plz don't open source them :)
 
 ## The Counter
-Codeforces: 76 problems solved  
+Codeforces: 79 problems solved  
 SPOJ: 13 problems solved  
 Code Jam: 5 problems solved  
 
