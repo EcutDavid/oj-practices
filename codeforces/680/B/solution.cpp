@@ -6,7 +6,7 @@ int main() {
   cin >> n >> index;
   index--;
 
-      bool c[n];
+  bool c[n];
   for (int i = 0; i < n; i++) {
     int num;
     cin >> num;
