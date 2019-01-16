@@ -2,10 +2,8 @@
 using namespace std;
 
 int main() {
-  unsigned int b;
-  while (cin >> b) {
-    unsigned int p, m;
-    cin >> p >> m;
+  unsigned int b, p, m;;
+  while (cin >> b >> p >> m) {
     b = b % m;
 
     int res = 1;
