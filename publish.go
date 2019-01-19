@@ -7,6 +7,8 @@ import (
 	"os"
 	"os/exec"
 	"strings"
+
+	"github.com/ecutdavid/codeforcesreport"
 )
 
 var platforms = []string{"codeforces", "spoj", "codejam"}
@@ -35,6 +37,10 @@ func getSolutionCountInDir(path string) (count int) {
 func getProgress() (result string) {
 	for _, p := range platforms {
 		count := getSolutionCountInDir("./" + p)
+		if p == "codeforces" {
+			res := codeforcesreport.FetchSubmissions("davidguandev")
+			count = len(codeforcesreport.ParseUniqOkSubmissions(res))
+		}
 		if count > 1 {
 			// add two spaces due to markdown
 			result += fmt.Sprintf("%s: %d problems solved  \n", formalName[p], count)
