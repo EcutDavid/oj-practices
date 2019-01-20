@@ -83,7 +83,11 @@ func main() {
 	if err := cmd.Run(); err != nil {
 		log.Fatal(err)
 	}
-	cmd = exec.Command("git", "commit", "-am", "automated commit from ./publish.go")
+	message := "automated commit from ./publish.go"
+	if len(os.Args) > 1 {
+		message = os.Args[1]
+	}
+	cmd = exec.Command("git", "commit", "-am", message)
 	cmd.Stdout = os.Stdout
 	if err = cmd.Run(); err != nil {
 		log.Fatal(err)
