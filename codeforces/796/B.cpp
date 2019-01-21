@@ -1,3 +1,4 @@
+// Spent 30 mins on learning cin/cout is slower than scanf/printf when big amount of chunked data come.
 #include <bits/stdc++.h>
 using namespace std;
 
