@@ -3,6 +3,7 @@
 *-TBD
 *.in
 *.out
+*.swp
 
 .vscode
 
