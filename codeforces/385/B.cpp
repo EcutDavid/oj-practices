@@ -16,6 +16,8 @@ typedef deque<i32> di32;
 
 i32 main() {
 	ios::sync_with_stdio(false); // Makes IO faster, remove this line if C style scanf/printf needed.
+  vi32 a = {3,5,2,1};
+  cout << *max_element(a.begin(), a.end()) << endl;
 
   string s; vi32 b; cin >> s;
   // The size might smaller than 3.
