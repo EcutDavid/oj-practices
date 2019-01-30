@@ -37,4 +37,14 @@ class Solution {
 
 i32 main() {
   ios::sync_with_stdio(false); // Makes IO faster, remove this line if C style scanf/printf needed.
+  vector<i32> v;
+  REP(i, 0, 10) v.push_back(i);
+
+  cout << v.size() << endl;
+  REP(i, 0, 10) cout << v[i] << endl;
+
+  remove(all(v), 5);
+
+  cout << v.size() << endl;
+  REP(i, 0, 10) cout << v[i] << endl;
 }
