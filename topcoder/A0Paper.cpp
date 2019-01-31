@@ -17,24 +17,16 @@ typedef deque<i32> di32;
 #define PF push_front
 #define TR(c, it) for (auto(it) = (c).begin(); (it) != (c).end(); (it)++)
 
-i64 dp[(i32)1e5 + 1];
+class A0Paper {
+ public:
+  string canBuild(vector<i32> A) {
+    i32 expect = 1;
+    REP(i, 0, A.size()) {
+      if (A[i] >= expect) return "Possible";
 
-i32 main() {
-  ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
-
-  i32 t;
-  cin >> t;
-  unordered_map<i32, i64> nMap;
-  REP(i, 0, t) {
-    i32 num;
-    cin >> num;
-    nMap[num] += num;
+      expect -= A[i];
+      expect *= 2;
+    }
+    return "Impossible";
   }
-
-  dp[0] = 0;
-  dp[1] = nMap[1];
-  REP(i, 2, (i32)1e5 + 1) {
-    dp[i] = max(dp[i - 1], nMap[i] + dp[i - 2]);
-  }
-  cout << dp[(i32)1e5] << endl;
-}
+};
