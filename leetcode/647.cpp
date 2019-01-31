@@ -29,12 +29,16 @@ class Solution {
     REP(i, 1, s.size()) {
       REP(j, 0, s.size() - i) {
         if (s[j] != s[j + i]) continue;
-        dp[i][j] = i == 1 ? true : dp [i - 2][j + 1];
+        dp[i][j] = i == 1 ? true : dp[i - 2][j + 1];
       }
     }
 
     i32 sum = 0;
-    TR(dp, it)  TR(*it, d) sum += (*d) ? 1 : 0;
+    TR(dp, it) {
+      TR(*it, d) {
+        sum += (*d) ? 1 : 0;
+      }
+    }
 
     return sum;
   }
