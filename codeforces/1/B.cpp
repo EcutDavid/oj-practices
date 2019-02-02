@@ -33,7 +33,6 @@ i32 main() {
     }
 
     if (rxcyC != -1) {
-      string r = line.substr(1, rxcyC - 1);
       i32 c = atoi(line.substr(rxcyC + 1).c_str());
       string cStr = "";
 
@@ -43,17 +42,11 @@ i32 main() {
         cStr = dig + cStr;
         c = (c - 1) / 26;
       }
-
-      cout << cStr << r << "\n";
+      cout << cStr << line.substr(1, rxcyC - 1) << "\n";
     } else {
       auto rIt = find_if(all(line), [](char a) { return a >= '0' && a <= '9'; });
-      i32 c = 0;
-      REP(i, line.begin(), rIt) {
-        c *= 26;
-        c += *i - 'A' + 1;
-      }
-      string r = string(rIt, line.end());
-      cout << "R" << r << "C" << c << "\n";
+      auto c = accumulate(line.begin(), rIt, 0, [](i32 sum, char dig) { return sum * 26 + dig - 'A' + 1; });
+      cout << "R" << string(rIt, line.end()) << "C" << c << "\n";
     }
   }
 }
