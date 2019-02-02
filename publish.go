@@ -24,7 +24,7 @@ func getSolutionCountInDir(path string) (count int) {
 		log.Fatal(err)
 	}
 	for _, f := range files {
-		if !f.IsDir() && strings.HasSuffix(f.Name(), ".go") {
+		if !f.IsDir() && (strings.HasSuffix(f.Name(), ".go") || strings.HasSuffix(f.Name(), ".cpp")) {
 			count++
 		}
 		if f.IsDir() && !strings.HasSuffix(f.Name(), "-TBD") {
