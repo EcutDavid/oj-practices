@@ -1,5 +1,6 @@
 | Problem | Notes |
 |---|-------|
+| CF 466/C | Spent around 1 hr working on a wrong solution(happens to passed lots of test cases), came up with a correct solution shortely after a 30 mins sleep. |
 | UVA 10368  | It was challenging, had a long time on how to get started, until the observations are made. <br />O1: this question is highly related to GCD, so the question name "Euclid's Game" is indeed a big hint. <br /> O2: For a > b, if a / b >= 2, the player can choose to reduce b "at once", or just only reduce a b from a. <br/> O3: For each "reduce-b-operation", for example, 15 & 4, need two operations, one to 4 & 3, one to 3 & 1, we can use a number to represent it, based on O2, the number can only be 1 or 2(if op count > 1). <br /> O4: Once we have all the operation, we can walk through the very last operation to very first to check whether the player can win. |
 | UVA 369 | This question is not harder than 10368, but spent more time solving it, due to came up some bad solutions without proving them, then get started. <br/> Component 1: Big number multiplication and addition. <br/>  Component 2: Prime factors, so we can get the factors of comb and get the expected result with C1. |
 | UVA 713 | An easier version of 305(maybe that's because my solution for 305 is harder than it should be.), but worth a play to practice speed! |
