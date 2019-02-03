@@ -1,6 +1,7 @@
 | Problem | Submit Count | Reading & Thinking(mins) | Coding(mins) | Debugging(mins) | Tags |
 | - |:-:|:-:|:-:|:-:|-:|
 |  |  |  |  |  |  |
+| [CF 580/C](https://codeforces.com/problemset/problem/580/C) Kefa and Park | 1 | 11 | 11 | 0 | dfs |
 | [CF 466/C](https://codeforces.com/problemset/problem/466/C) Number of Ways | 5 | 10 | 30 | 70 | math |
 | [CF 550/A](https://codeforces.com/problemset/problem/550/A) Two Substrings | 4 | 12 | 5 | 10 | brute force |
 | [CF 4/C](https://codeforces.com/problemset/problem/4/C) Registration system | 1 | 5 | 3 | 0 | brute force |
