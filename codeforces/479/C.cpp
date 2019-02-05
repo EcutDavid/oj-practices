@@ -19,14 +19,25 @@ typedef deque<i32> di32;
 
 i32 main() {
   ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
-  list<i32> l = {1, 2, 3, 4};
-  TR(l, it) {
-    cout <<  *it << endl;
+
+  i32 n;
+  cin >> n;
+  vector<pi32> v(n);
+  REP(i, 0, n) {
+    i32 a, b;
+    cin >> a >> b;
+    v[i] = {a, b};
   }
-  auto s = l.begin();
-  s++;
-  // swap(l.begin(), end);
-  TR(l, it) {
-    cout <<  *it << endl;
+  sort(all(v));
+
+  i32 cur = 0;
+  TR(v, it) {
+    if (it->second >= cur) {
+      cur = it->second;
+    } else {
+      cur = it->first;
+    }
   }
+
+  cout << cur << endl;
 }
