@@ -1,6 +1,7 @@
 | Problem | Submit Count | Reading & Thinking(mins) | Coding(mins) | Debugging(mins) | Tags |
 | - |:-:|:-:|:-:|:-:|-:|
 |  |  |  |  |  |  |
+| [CF 580/B](https://codeforces.com/problemset/problem/580/B) Kefa and Company | 2 | 17 | 8 | 1 | two pointers |
 | [AT abc117/C](https://atcoder.jp/contests/abc117/tasks/abc117_c) Streamline | 1 | 36 | 7 | 0 | sorting |
 | [UVA 10252](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1193) Common Permutation | 20 | 2 | 8 | 7 | string |
 | [CF 580/C](https://codeforces.com/problemset/problem/580/C) Kefa and Park | 1 | 11 | 11 | 0 | dfs |
