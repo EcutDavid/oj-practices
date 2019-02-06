@@ -1,6 +1,8 @@
 | Problem | Submit Count | Reading & Thinking(mins) | Coding(mins) | Debugging(mins) | Tags |
 | - |:-:|:-:|:-:|:-:|-:|
 |  |  |  |  |  |  |
+| [AT abc117/C](https://atcoder.jp/contests/abc117/tasks/abc117_c) Streamline | 1 | 36 | 7 | 0 | sorting |
+| [UVA 10252](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1193) Common Permutation | 20 | 2 | 8 | 7 | string |
 | [CF 580/C](https://codeforces.com/problemset/problem/580/C) Kefa and Park | 1 | 11 | 11 | 0 | dfs |
 | [CF 466/C](https://codeforces.com/problemset/problem/466/C) Number of Ways | 5 | 10 | 30 | 70 | math |
 | [CF 550/A](https://codeforces.com/problemset/problem/550/A) Two Substrings | 4 | 12 | 5 | 10 | brute force |
