@@ -1,5 +1,6 @@
 | Problem | Notes |
 |---|-------|
+| CF 580/B | Actually the first two pointers problem I remember I have ever solved. |
 | UVA 10252 | Spent around 7 mins due to missed the facts that some input tokens might just be simply empty strings, which default "cin >>" miss. Also spent more time on thinking due to didn't really understand the problem specification before think. |
 | CF 466/C | Spent around 1 hr working on a wrong solution(happens to passed lots of test cases), came up with a correct solution shortely after a 30 mins sleep. |
 | UVA 10368  | It was challenging, had a long time on how to get started, until the observations are made. <br />O1: this question is highly related to GCD, so the question name "Euclid's Game" is indeed a big hint. <br /> O2: For a > b, if a / b >= 2, the player can choose to reduce b "at once", or just only reduce a b from a. <br/> O3: For each "reduce-b-operation", for example, 15 & 4, need two operations, one to 4 & 3, one to 3 & 1, we can use a number to represent it, based on O2, the number can only be 1 or 2(if op count > 1). <br /> O4: Once we have all the operation, we can walk through the very last operation to very first to check whether the player can win. |
