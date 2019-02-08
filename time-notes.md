@@ -1,6 +1,7 @@
 | Problem | Submit Count | Reading & Thinking(mins) | Coding(mins) | Debugging(mins) | Tags |
 | - |:-:|:-:|:-:|:-:|-:|
 |  |  |  |  |  |  |
+| [CF 431/C](https://codeforces.com/problemset/problem/431/C) k-Tree | 1 | 65 | 12 | 0 | dp |
 | [UVA 850](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=791) Crypt Kicker II | 2 | 30 | 20 | 2 | string |
 | [CF 580/B](https://codeforces.com/problemset/problem/580/B) Kefa and Company | 2 | 17 | 8 | 1 | two pointers |
 | [AT abc117/C](https://atcoder.jp/contests/abc117/tasks/abc117_c) Streamline | 1 | 36 | 7 | 0 | sorting |
