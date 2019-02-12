@@ -1,5 +1,6 @@
 | Problem | Notes |
 |---|-------|
+| CF 414/B | The first 50 mins was the old "how can I possibly solve this problem?", then, the recursive equations for DP just came out, made a two dimensional DP solution first, then, reduced it to one dimensional DP. |
 | CF 580/B | Actually the first two pointers problem I remember I have ever solved. |
 | UVA 10252 | Spent around 7 mins due to missed the facts that some input tokens might just be simply empty strings, which default "cin >>" miss. Also spent more time on thinking due to didn't really understand the problem specification before think. |
 | CF 466/C | Spent around 1 hr working on a wrong solution(happens to passed lots of test cases), came up with a correct solution shortely after a 30 mins sleep. |
