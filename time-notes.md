@@ -1,6 +1,7 @@
 | Problem | Submit Count | Reading & Thinking(mins) | Coding(mins) | Debugging(mins) | Tags |
 | - |:-:|:-:|:-:|:-:|-:|
 |  |  |  |  |  |  |
+| [CSES 1092](https://cses.fi/problemset/task/1092) Two Sets | 1 | 25 | 4 | 0 | math |
 | [CF 414/B](https://codeforces.com/problemset/problem/414/B) Mashmokh and ACM | 1 | 86 | 3 | 15 | dp |
 | [CF 431/C](https://codeforces.com/problemset/problem/431/C) k-Tree | 1 | 65 | 12 | 0 | dp |
 | [UVA 850](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=791) Crypt Kicker II | 2 | 30 | 20 | 2 | string |
