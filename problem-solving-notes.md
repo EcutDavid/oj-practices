@@ -1,10 +1,10 @@
 | Problem | Notes |
 |---|-------|
-| CF 545 Woodcutters | As the (tutorial)[https://codeforces.com/blog/entry/17982] mentioned, this problem can be solved in both DP and greddy solution. |
+| CF 545 Woodcutters | As the (tutorial)[https://codeforces.com/blog/entry/17982] mentioned, this problem can be solved in both DP and greedy solution. |
 | CF 414/B | The first 50 mins was the old "how can I possibly solve this problem?", then, the recursive equations for DP just came out, made a two dimensional DP solution first, then, reduced it to one dimensional DP. |
 | CF 580/B | Actually the first two pointers problem I remember I have ever solved. |
 | UVA 10252 | Spent around 7 mins due to missed the facts that some input tokens might just be simply empty strings, which default "cin >>" miss. Also spent more time on thinking due to didn't really understand the problem specification before think. |
-| CF 466/C | Spent around 1 hr working on a wrong solution(happens to passed lots of test cases), came up with a correct solution shortely after a 30 mins sleep. |
+| CF 466/C | Spent around 1 hr working on a wrong solution(happens to passed lots of test cases), came up with a correct solution shortly after a 30 mins sleep. |
 | UVA 10368  | It was challenging, had a long time on how to get started, until the observations are made. <br />O1: this question is highly related to GCD, so the question name "Euclid's Game" is indeed a big hint. <br /> O2: For a > b, if a / b >= 2, the player can choose to reduce b "at once", or just only reduce a b from a. <br/> O3: For each "reduce-b-operation", for example, 15 & 4, need two operations, one to 4 & 3, one to 3 & 1, we can use a number to represent it, based on O2, the number can only be 1 or 2(if op count > 1). <br /> O4: Once we have all the operation, we can walk through the very last operation to very first to check whether the player can win. |
 | UVA 369 | This question is not harder than 10368, but spent more time solving it, due to came up some bad solutions without proving them, then get started. <br/> Component 1: Big number multiplication and addition. <br/>  Component 2: Prime factors, so we can get the factors of comb and get the expected result with C1. |
 | UVA 713 | An easier version of 305(maybe that's because my solution for 305 is harder than it should be.), but worth a play to practice speed! |

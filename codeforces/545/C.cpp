@@ -18,6 +18,7 @@ typedef deque<i32> di32;
 #define PRINT(x) cout << #x ": " << (x) << endl;
 #define TR(c, it) for (auto(it) = (c).begin(); (it) != (c).end(); (it)++)
 
+// greedy solution
 i32 main() {
   ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
 
@@ -49,3 +50,39 @@ i32 main() {
   }
   cout << total << endl;
 }
+
+// DP solution, also AC-ed, but harder to understand due to bad code, but the computation model works.
+// i32 main() {
+//   ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
+
+//   i32 n;
+//   cin >> n;
+
+//   vector<pi32> t;
+//   REP(i, 0, n) {
+//     i32 x, h;
+//     cin >> x >> h;
+//     t.push_back({x, h});
+//   }
+
+//   i32 dp[n][2];
+//   dp[0][0] = 1;
+//   dp[0][1] = t[0].first + t[0].second < t[1].first ? 1 : 0;
+
+//   REP(i, 1, n) {
+//     dp[i][1] = dp[i][0] = max(dp[i - 1][0], dp[i - 1][1]);
+
+//     if (t[i].first - t[i].second > t[i - 1].first) {  // Can cut to left
+//       dp[i][0] = max(dp[i][0], dp[i - 1][0] + 1);
+
+//       if (t[i].first - t[i].second > t[i - 1].first + t[i - 1].second) {
+//         dp[i][0] = max(dp[i][0], dp[i - 1][1] + 1);
+//       }
+//     }
+//     if ((t[i].first + t[i].second < t[i + 1].first) || (i == (n - 1))) {
+//       dp[i][1] = max(dp[i - 1][0], dp[i - 1][1]) + 1;
+//     }
+//   }
+
+//   cout << max(dp[n - 1][0], dp[n - 1][1]) << endl;
+// }
