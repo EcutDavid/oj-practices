@@ -1,6 +1,7 @@
 | Problem | Submit Count | Reading & Thinking(mins) | Coding(mins) | Debugging(mins) | Tags |
 | - |:-:|:-:|:-:|:-:|-:|
 |  |  |  |  |  |  |
+| [CF 474/D](https://codeforces.com/problemset/problem/474/D) Flowers | 1 | 12 | 9 | 0 | dp |
 | [CF 2/A](https://codeforces.com/problemset/problem/2/A) Winner | 8 | 8 | 8 | 42 | brute force |
 | [CSES 1092](https://cses.fi/problemset/task/1092) Two Sets | 1 | 25 | 4 | 0 | math |
 | [CF 414/B](https://codeforces.com/problemset/problem/414/B) Mashmokh and ACM | 1 | 86 | 3 | 15 | dp |
