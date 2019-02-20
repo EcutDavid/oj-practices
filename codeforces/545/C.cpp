@@ -21,7 +21,6 @@ typedef deque<i32> di32;
 // greedy solution
 i32 main() {
   ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
-
   i32 n;
   cin >> n;
 

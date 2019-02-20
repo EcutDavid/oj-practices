@@ -1,13 +1,14 @@
 | Problem | Submit Count | Reading & Thinking(mins) | Coding(mins) | Debugging(mins) | Tags |
 | - |:-:|:-:|:-:|:-:|-:|
 |  |  |  |  |  |  |
+| [CF 2/A](https://codeforces.com/problemset/problem/2/A) Winner | 8 | 8 | 8 | 42 | brute force |
 | [CSES 1092](https://cses.fi/problemset/task/1092) Two Sets | 1 | 25 | 4 | 0 | math |
 | [CF 414/B](https://codeforces.com/problemset/problem/414/B) Mashmokh and ACM | 1 | 86 | 3 | 15 | dp |
 | [CF 431/C](https://codeforces.com/problemset/problem/431/C) k-Tree | 1 | 65 | 12 | 0 | dp |
 | [UVA 850](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=791) Crypt Kicker II | 2 | 30 | 20 | 2 | string |
 | [CF 580/B](https://codeforces.com/problemset/problem/580/B) Kefa and Company | 2 | 17 | 8 | 1 | two pointers |
 | [AT abc117/C](https://atcoder.jp/contests/abc117/tasks/abc117_c) Streamline | 1 | 36 | 7 | 0 | sorting |
-| [UVA 10252](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1193) Common Permutation | 20 | 2 | 8 | 7 | string |
+| [UVA 10252](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1193) Common Permutation | 2 | 2 | 8 | 7 | string |
 | [CF 580/C](https://codeforces.com/problemset/problem/580/C) Kefa and Park | 1 | 11 | 11 | 0 | dfs |
 | [CF 466/C](https://codeforces.com/problemset/problem/466/C) Number of Ways | 5 | 10 | 30 | 70 | math |
 | [CF 550/A](https://codeforces.com/problemset/problem/550/A) Two Substrings | 4 | 12 | 5 | 10 | brute force |
