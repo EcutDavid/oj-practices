@@ -1,7 +1,8 @@
 | Problem | Submit Count | Reading & Thinking(mins) | Coding(mins) | Debugging(mins) | Tags |
 | - |:-:|:-:|:-:|:-:|-:|
 |  |  |  |  |  |  |
-| [codejam 2017 R1C/A](https://code.google.com/codejam/contest/3274486/dashboard#s=p0) Ample Syrup |  | 1 | 12 | 15 | sort |
+| [CSES 1084](https://cses.fi/problemset/task/1084) Apartments | 1 | 70 | 6 | 0 | sort, two pointers |
+| [codejam 2017 R1C/A](https://code.google.com/codejam/contest/3274486/dashboard#s=p0) Ample Syrup |  1 | 18 | 15 | 0 | sort |
 | [CF 474/D](https://codeforces.com/problemset/problem/474/D) Flowers | 1 | 12 | 9 | 0 | dp |
 | [CF 2/A](https://codeforces.com/problemset/problem/2/A) Winner | 8 | 8 | 8 | 42 | brute force |
 | [CSES 1092](https://cses.fi/problemset/task/1092) Two Sets | 1 | 25 | 4 | 0 | math |
