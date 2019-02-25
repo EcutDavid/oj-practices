@@ -1,5 +1,6 @@
 | Problem | Notes |
 |---|-------|
+| CSES 1073 Towers | Obv1: giving existing towers & a new cube, as long as there are tower can hold this new cube, don't create a new tower, because there is not a better choice the problem is to choose which one, Obv2: from the towers that can hold the new cube, choose the one with smallest top cube. Obv3: giving the requirement, we need a binary search tree, so, can use C++ map to solve it. |
 | CF 545 Woodcutters | As the (tutorial)[https://codeforces.com/blog/entry/17982] mentioned, this problem can be solved in both DP and greedy solution. |
 | CF 414/B | The first 50 mins was the old "how can I possibly solve this problem?", then, the recursive equations for DP just came out, made a two dimensional DP solution first, then, reduced it to one dimensional DP. |
 | CF 580/B | Actually the first two pointers problem I remember I have ever solved. |
