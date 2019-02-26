@@ -1,6 +1,7 @@
 | Problem | Submit Count | Reading & Thinking(mins) | Coding(mins) | Debugging(mins) | Tags |
 | - |:-:|:-:|:-:|:-:|-:|
 |  |  |  |  |  |  |
+| [CSES 1158](https://cses.fi/problemset/task/1158) Book Shop | 1 | 20 | 8 | 2 | dp |
 | [CSES 1073](https://cses.fi/problemset/task/1073) Towers | 1 | 7 | 8 | 0 | binary search tree |
 | [CSES 1084](https://cses.fi/problemset/task/1084) Apartments | 1 | 70 | 6 | 0 | sort, two pointers |
 | [codejam 2017 R1C/A](https://code.google.com/codejam/contest/3274486/dashboard#s=p0) Ample Syrup |  1 | 18 | 15 | 0 | sort |
