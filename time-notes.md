@@ -1,6 +1,7 @@
 | Problem | Submit Count | Reading & Thinking(mins) | Coding(mins) | Debugging(mins) | Tags |
 | - |:-:|:-:|:-:|:-:|-:|
 |  |  |  |  |  |  |
+| [CF 277/A](https://codeforces.com/problemset/problem/277/A) Learning Languages | 3 | 12 | 15 | 3 | dfs |
 | [CSES 1158](https://cses.fi/problemset/task/1158) Book Shop | 1 | 20 | 8 | 2 | dp |
 | [CSES 1073](https://cses.fi/problemset/task/1073) Towers | 1 | 7 | 8 | 0 | binary search tree |
 | [CSES 1084](https://cses.fi/problemset/task/1084) Apartments | 1 | 70 | 6 | 0 | sort, two pointers |
