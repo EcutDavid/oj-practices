@@ -1,6 +1,4 @@
-// Edge case 1: no one can speak any language.
 #include <bits/stdc++.h>
-
 using namespace std;
 
 typedef double f64;
@@ -21,46 +19,33 @@ typedef deque<i32> di32;
 #define TR(c, it) for (auto(it) = (c).begin(); (it) != (c).end(); (it)++)
 #define MAX_PRECISION cout << setprecision(numeric_limits<double>::max_digits10);
 
-map<i32, set<i32>> lanToP;
-map<i32, set<i32>> pToLan;
-vector<bool> visited(100, false);
+// Using array for adj whenever we can as it's faster than unordered_map.
+vi32 adj[i32(5e5) + 1] = {};
 
-void visit(i32 p) {
-  visited[p] = true;
-
-  TR(pToLan[p], lan) {
-    TR(lanToP[*lan], d) {
-      if (visited[*d]) continue;
-      visit(*d);
-    }
+pi32 dfs(i32 cur, i32 distance, i32 parent) {
+  pi32 best = {distance, cur};
+  TR(adj[cur], it) {
+    if (*it == parent) continue;
+    best = max(best, dfs(*it, distance + 1, cur));
   }
+  return best;
 }
 
 i32 main() {
   ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
 
-  i32 n, m;
-  cin >> n >> m;
-  REP(i, 0, n) {
-    i32 count;
-    cin >> count;
-    REP(j, 0, count) {
-      i32 d;
-      cin >> d;
-      lanToP[d].insert(i);
-      pToLan[i].insert(d);
-    }
-  }
-  if (lanToP.empty()) {
-    cout << n << endl;
-    return 0;
+  i32 n;
+  cin >> n;
+  REP(i, 0, n - 1) {
+    i32 a, b;
+    cin >> a >> b;
+    adj[a].push_back(b);
+    adj[b].push_back(a);
   }
 
-  i32 total = -1;
-  REP(i, 0, n) {
-    if (visited[i]) continue;
-    total++;
-    visit(i);
-  }
-  cout << total << endl;
+  i32 dis, node;
+  tie(dis, node) = dfs(1, 0, -1);
+  tie(dis, node) = dfs(node, 0, -1);
+
+  cout << dis << endl;
 }
