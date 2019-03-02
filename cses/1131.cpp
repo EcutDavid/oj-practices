@@ -33,7 +33,6 @@ pi32 dfs(i32 cur, i32 distance, i32 parent) {
 
 i32 main() {
   ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
-
   i32 n;
   cin >> n;
   REP(i, 0, n - 1) {
