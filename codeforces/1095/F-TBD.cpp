@@ -20,7 +20,8 @@ i64 a[(int)2e5];
 i32 main() {
   i32 n, m;
   cin >> n >> m;
-  REP(i, 0, n) cin >> a[i];
+  REP(i, 0, n)
+      cin >> a[i];
   i64 adj[n + 1][n + 1];
   REP(i, 1, n + 1) {
     REP(j, 1, n + 1) {
@@ -32,17 +33,21 @@ i32 main() {
     i64 v1, v2, w;
     cin >> v1 >> v2 >> w;
     if (adj[v1][v2] > w) {
-      adj[v1][v2] = w; adj[v2][v1] = w;
+      adj[v1][v2] = w;
+      adj[v2][v1] = w;
     }
   }
   priority_queue<pair<i64, i32>> q = {};
-  map<int, bool> processed = {}; i64 sum = 0;
+  map<int, bool> processed = {};
+  i64 sum = 0;
   q.push(pair<i64, i32>{0, 1});
   while (q.size()) {
-    auto item = q.top(); q.pop();
+    auto item = q.top();
+    q.pop();
     if (processed[item.second]) continue;
     cout << "process" << item.second << "  " << item.first << endl;
-    processed[item.second] = true; sum += -item.first;
+    processed[item.second] = true;
+    sum += -item.first;
 
     REP(i, 1, n + 1) {
       if (i == item.second) continue;
