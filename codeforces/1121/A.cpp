@@ -33,12 +33,11 @@ i32 main() {
     cin >> school[i + 1];
   }
 
-  vector<i32> schoolRep(s + 1, -1);
+  vector<i32> schoolRep(s + 1);
   REP(i, 1, n + 1) {
     i32 rep = schoolRep[school[i]];
-    if ((rep == -1) || (score[i] > score[rep])) {
+    if (!rep || (score[i] > score[rep]))
       schoolRep[school[i]] = i;
-    }
   }
 
   i32 total = 0;

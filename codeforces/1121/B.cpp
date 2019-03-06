@@ -24,25 +24,21 @@ i32 main() {
 
   i32 n;
   cin >> n;
-  unordered_set<i32> sa;
   vi32 a;
 
   REP(i, 0, n) {
     i32 num;
     cin >> num;
-    sa.insert(num);
     a.push_back(num);
   }
-  sort(all(a));
 
-  i32 best = 1;
-  REP(i, a[0] + a[0] + 1, a[n - 1] + a[n - 2] + 1) {
-    i32 total = 0;
-    TR(a, it) {
-      if (*it * 2 >= i) break;
-      if (sa.count(i - *it)) total++;
+  unordered_map<i32, i32> resMap;
+  REP(i, 0, n) {
+    REP(j, i + 1, n) {
+      resMap[a[i] + a[j]]++;
     }
-    best = max(total, best);
   }
-  cout << best << endl;
+
+  auto best = max_element(all(resMap), [](pi32 a, pi32 b) { return a.second < b.second; });
+  cout << best->second << endl;
 }
