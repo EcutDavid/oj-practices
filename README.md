@@ -12,7 +12,7 @@ It's mentioned in projecteuler.net that anyone should not open source their solu
 
 ## The Counter
 Codeforces: 133 problems solved  
-SPOJ: 13 problems solved  
+SPOJ: 14 problems solved  
 Code Jam: 10 problems solved  
 
 ## Notes
