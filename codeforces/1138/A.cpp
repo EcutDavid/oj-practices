@@ -24,42 +24,26 @@ i32 main() {
 
   i32 n;
   cin >> n;
-  unordered_map<i32, queue<i32>> m;
-
+  vi32 a(n);
   REP(i, 0, n) {
-    i32 num;
-    cin >> num;
-    if (m[num].size() <= 1) {
-      m[num].push(i);
-      continue;
-    }
-    if (m[num].front() == -1) continue;
+    cin >> a[i];
+  }
+  i32 prev = a[0], cur = 0;
+  vi32 s(1, 1);
 
-    i32 t = m[num].front();
-    m[num].pop();
-    if ((m[num].front() - t) == (i - m[num].front())) {
-      m[num].push(i);
+  REP(i, 1, n) {
+    if (a[i] == a[i - 1]) {
+      s[cur]++;
     } else {
-      m[num].pop();
-      m[num].push(-1);
-      m[num].push(-1);
+      prev = a[i];
+      cur++;
+      s.push_back(1);
     }
   }
 
-  i32 total = 0;
-  vector<string> output;
-  REP(i, 1, i32(1e5 + 1)) {
-    if (m[i].empty() || m[i].front() == -1) continue;
-
-    total++;
-    i32 t = m[i].front();
-    i32 diff = m[i].size() == 1 ? 0 : m[i].back() - t;
-
-    output.push_back(to_string(i) + " " + to_string(diff) + "\n");
+  i32 best = 0;
+  REP(i, 1, cur + 1) {
+    best = max(min(s[i - 1], s[i]), best);
   }
-
-  cout << total << "\n";
-  TR(output, it) {
-    cout << *it;
-  }
+  cout << best * 2 << endl;
 }
