@@ -42,9 +42,11 @@ i32 main() {
   }
 
   i32 cMax = c.size() + b.size();
+  vi32 g;
   REP(i, 0, n / 2 + 1) {
     // Validate total i that good at C works
     if (i > cMax) break;
+    if (!g.empty()) break;
 
     REP(j, 0, i + 1) {
       if (j > b.size()) break;
@@ -59,27 +61,26 @@ i32 main() {
       if ((diff > rest) || (diff > a.size())) continue;
       if (rest - diff > none.size()) continue;
 
-      bool hadOutput = false;
       REP(k, 0, i - j) {
-        cout << (hadOutput ? " " : "") << c[k];
-        hadOutput = true;
+        g.push_back(c[k]);
       }
       REP(k, 0, j) {
-        cout << (hadOutput ? " " : "") << b[k];
-        hadOutput = true;
+        g.push_back(b[k]);
       }
       REP(k, 0, diff) {
-        cout << (hadOutput ? " " : "") << a[k];
-        hadOutput = true;
+        g.push_back(a[k]);
       }
       REP(k, 0, rest - diff) {
-        cout << (hadOutput ? " " : "") << none[k];
-        hadOutput = true;
+        g.push_back(none[k]);
       }
-      cout << endl;
-      return 0;
+      break;
     }
   }
-
-  cout << -1 << endl;
+  if (g.empty()) {
+    cout << -1 << endl;
+  } else {
+    REP(i, 0, g.size()) {
+      cout << (i == 0 ? "" : " ") << g[i];
+    }
+  }
 }
