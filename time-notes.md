@@ -1,6 +1,7 @@
 | Problem | Submit Count | Reading & Thinking(mins) | Coding(mins) | Debugging(mins) | Tags |
 | - |:-:|:-:|:-:|:-:|-:|
 |  |  |  |  |  |  |
+| [CF 550/B](https://codeforces.com/problemset/problem/550/B) Preparing Olympiad | 1 | 10 | 9 | 0 | bitmasks |
 | [CSES 1143](https://cses.fi/problemset/task/1143) Hotels | 1 | 230 | 15 | 0 | segment tree |
 | [CF 505/B](https://codeforces.com/contest/505/problem/B) Mr. Kitayuta's Colorful Graph | 1 | 12 | 14 | 0 | dfs, bfs |
 | [CF 550/C](https://codeforces.com/contest/550/problem/C) Divisibility by Eight | 1 | 200 | 16 | 0 | dp, math |
