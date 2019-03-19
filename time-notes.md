@@ -1,6 +1,8 @@
 | Problem | Submit Count | Reading & Thinking(mins) | Coding(mins) | Debugging(mins) | Tags |
 | - |:-:|:-:|:-:|:-:|-:|
 |  |  |  |  |  |  |
+| [CF 236/B](https://codeforces.com/contest/236/problem/B) Easy Number Challenge | 3 | 13 | 20 | 26 | number theory |
+| [CF 617/B](https://codeforces.com/contest/617/problem/B) Chocolate | 2 | 10 | 7 | 0 | brute force |
 | [CF 550/B](https://codeforces.com/problemset/problem/550/B) Preparing Olympiad | 1 | 10 | 9 | 0 | bitmasks |
 | [CSES 1143](https://cses.fi/problemset/task/1143) Hotels | 1 | 230 | 15 | 0 | segment tree |
 | [CF 505/B](https://codeforces.com/contest/505/problem/B) Mr. Kitayuta's Colorful Graph | 1 | 12 | 14 | 0 | dfs, bfs |
