@@ -5,6 +5,7 @@
 *.out
 *.swp
 *.swo
+*.swn
 
 .vscode
 
