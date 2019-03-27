@@ -11,7 +11,7 @@ Here is the process: https://www.hackerrank.com/results/projecteuler/davidguande
 It's mentioned in projecteuler.net that anyone should not open source their solution(so I'm not open source the solutions here), if you interested in my solutions, plz talk to me privately, I can send them to you but plz don't open source them :)
 
 ## The Counter
-Codeforces: 147 problems solved  
+Codeforces: 148 problems solved  
 SPOJ: 14 problems solved  
 Code Jam: 12 problems solved  
 

@@ -1,6 +1,7 @@
 | Problem | Submit Count | Reading & Thinking(mins) | Coding(mins) | Debugging(mins) | Tags |
 | - |:-:|:-:|:-:|:-:|-:|
 |  |  |  |  |  |  |
+| [CF 584/B](https://codeforces.com/problemset/problem/584/B) Kolya and Tanya | 1 | 23 | 2 | 0 | combinatorics |
 | [CF 236/B](https://codeforces.com/contest/236/problem/B) Easy Number Challenge | 3 | 13 | 20 | 26 | number theory |
 | [CF 617/B](https://codeforces.com/contest/617/problem/B) Chocolate | 2 | 10 | 7 | 0 | brute force |
 | [CF 550/B](https://codeforces.com/problemset/problem/550/B) Preparing Olympiad | 1 | 10 | 9 | 0 | bitmasks |
