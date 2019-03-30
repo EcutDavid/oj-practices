@@ -22,19 +22,37 @@ typedef deque<i32> di32;
 i32 main() {
   ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
 
-  i32 n, k;
-  cin >> n >> k;
-  vi32 a(n);
+  i64 n, s;
+  cin >> n >> s;
+
+  vector<i64> a(n), b(n);
   REP(i, 0, n) {
     cin >> a[i];
   }
 
-  i32 kIndex = k - 1;
-  if (!a[kIndex]) {
-    while (kIndex >= 0 && !a[kIndex]) kIndex--;
-  } else {
-    i32 kScore = a[kIndex];
-    while (kIndex < (a.size() - 1) && a[kIndex + 1] == kScore) kIndex++;
+  i64 best = 0, cost = 0, l = 1, r = n;
+  while (l <= r) {
+    i64 mid = (l + r) / 2;
+    REP(i, 0, n) {
+      b[i] = a[i] + mid * (i + 1);
+    }
+    sort(all(b));
+    i64 spend = 0;
+    REP(i, 0, mid) {
+      spend += b[i];
+      if (spend > s) break;
+    }
+
+    if (spend <= s) {
+      l = mid + 1;
+      if (mid > best) {
+        best = mid;
+        cost = spend;
+      }
+    } else {
+      r = mid - 1;
+    }
   }
-  cout << kIndex + 1 << endl;
+
+  cout << best << " " << cost << endl;
 }
