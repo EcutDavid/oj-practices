@@ -13,7 +13,7 @@ It's mentioned in projecteuler.net that anyone should not open source their solu
 ## The Counter
 Codeforces: 158 problems solved  
 SPOJ: 14 problems solved  
-Code Jam: 12 problems solved  
+Code Jam: 16 problems solved  
 
 ## Notes
 27/10/2018: made `./publish.go` for fun and encouraging.
