@@ -19,68 +19,30 @@ typedef deque<i32> di32;
 #define TR(c, it) for (auto(it) = (c).begin(); (it) != (c).end(); (it)++)
 #define MAX_PRECISION cout << setprecision(numeric_limits<double>::max_digits10);
 
-const i32 dirs[4][2] = {{0, -1}, {0, 1}, {1, 0}, {-1, 0}};
-
 class Solution {
  public:
-  int numEnclaves(vector<vector<int>>& A) {
-    if ((A.size() == 1) || (A[0].size() == 1)) return 0;
-
-    i32 lCount = 0;
+  int maxSumTwoNoOverlap(vector<int>& A, int L, int M) {
+    vi32 pre(A.size() + 1);
     REP(i, 0, A.size()) {
-      REP(j, 0, A[0].size()) {
-        lCount += A[i][j];
+      pre[i + 1] = pre[i] + A[i];
+    }
+    i32 ret = 0;
+    REP(i, 0, (A.size() - L + 1)) {
+      REP(j, 0, (A.size() - M + 1)) {
+        // non-overlap
+        i32 iC = i, jC = j;
+        i32 diff = L;  // Forgot swap the diff caused an extra attempt.
+        if (iC > jC) {
+          swap(iC, jC);
+          diff = M;
+        }
+        if ((iC + diff - 1) >= jC) continue;
+
+        i32 lV = pre[i + L] - pre[i];
+        i32 mV = pre[j + M] - pre[j];
+        ret = max(ret, lV + mV);
       }
     }
-
-    queue<pi32> q;
-    i32 bCount = 0;
-    set<pi32> visited;
-    REP(i, 0, A[0].size()) {
-      if (A[0][i]) {
-        pi32 pos = {0, i};
-        q.push(pos);
-        visited.insert(pos);
-      }
-
-      i32 lastY = A.size() - 1;
-      if (A[lastY][i]) {
-        pi32 pos = {lastY, i};
-        q.push(pos);
-        visited.insert(pos);
-      }
-      bCount += A[0][i] + A[lastY][i];
-    }
-    REP(i, 1, A.size() - 1) {
-      if (A[i][0]) {
-        pi32 pos = {i, 0};
-        q.push(pos);
-        visited.insert(pos);
-      }
-
-      i32 lastX = A[0].size() - 1;
-      if (A[i][lastX]) {
-        pi32 pos = {i, lastX};
-        q.push(pos);
-        visited.insert(pos);
-      }
-      bCount += A[i][0] + A[i][lastX];
-    }
-
-    while (!q.empty()) {
-      pi32 pos = q.front();
-      q.pop();
-
-      for (auto dir : dirs) {
-        i32 y = pos.first + dir[0], x = pos.second + dir[1];
-        if (y < 0 || y >= A.size() || x < 0 || x >= A[0].size()) continue;
-        if (!A[y][x] || visited.count({y, x})) continue;
-        visited.insert({y, x});
-        bCount++;
-        q.push({y, x});
-      }
-    }
-
-    return lCount - bCount;
+    return ret;
   }
 };

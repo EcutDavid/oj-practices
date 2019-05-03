@@ -21,28 +21,18 @@ typedef deque<i32> di32;
 
 class Solution {
  public:
-  int maxSumTwoNoOverlap(vector<int>& A, int L, int M) {
-    vi32 pre(A.size() + 1);
-    REP(i, 0, A.size()) {
-      pre[i + 1] = pre[i] + A[i];
-    }
-    i32 ret = 0;
-    REP(i, 0, (A.size() - L + 1)) {
-      REP(j, 0, (A.size() - M + 1)) {
-        // non-overlap
-        i32 iC = i, jC = j;
-        i32 diff = L;  // Forgot swap the diff caused an extra attempt.
-        if (iC > jC) {
-          swap(iC, jC);
-          diff = M;
-        }
-        if ((iC + diff - 1) >= jC) continue;
-
-        i32 lV = pre[i + L] - pre[i];
-        i32 mV = pre[j + M] - pre[j];
-        ret = max(ret, lV + mV);
-      }
-    }
-    return ret;
+  vector<int> numMovesStones(int a, int b, int c) {
+    vector<int> s = {a, b, c};
+    sort(s.begin(), s.end());
+    int least = (s[1] - s[0] == 1) ? 0 : 1;
+    least += (s[2] - s[1] == 1) ? 0 : 1;
+    if (least == 2 && ((s[1] - s[0] == 2) || (s[2] - s[1] == 2)) least = 1;
+    int most = s[1] - s[0] - 1;
+    most += s[2] - s[1] - 1;
+    return {least, most};
   }
 };
+
+i32 main() {
+  ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
+}

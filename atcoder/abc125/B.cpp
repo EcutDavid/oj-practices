@@ -21,4 +21,20 @@ typedef deque<i32> di32;
 
 i32 main() {
   ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
+
+  i32 n;
+  cin >> n;
+  vi32 v(n);
+
+  REP(i, 0, n) {
+    cin >> v[i];
+  }
+  i32 ret = 0;
+  REP(i, 0, n) {
+    i32 c;
+    cin >> c;
+    v[i] -= c;
+    if (v[i] > 0) ret += v[i];
+  }
+  cout << ret << endl;
 }
