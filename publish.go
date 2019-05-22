@@ -11,7 +11,8 @@ import (
 	"github.com/ecutdavid/codeforcesreport"
 )
 
-var platforms = []string{"codeforces", "spoj", "codejam"}
+// var platforms = []string{"codeforces", "spoj", "codejam"}
+var platforms = []string{"codeforces"}
 var formalName = map[string]string{
 	"codeforces": "Codeforces",
 	"spoj":       "SPOJ",
