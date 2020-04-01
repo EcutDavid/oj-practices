@@ -22,19 +22,43 @@ typedef deque<i32> di32;
 i32 main() {
   ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
 
-  i32 n;
-  cin >> n;
-  vi32 v(n);
+  i32 n, m, k;
+  cin >> n >> m >> k;
+  vector<vi32> c;
+  vi32 wTotal = {k};
 
   REP(i, 0, n) {
-    cin >> v[i];
+    vi32 ci(3, 0);
+    REP(j, 0, 3) {
+      cin >> ci[j];
+    }
+    wTotal.push_back(wTotal[wTotal.size() - 1] + ci[1]);
+    c.push_back(ci);
   }
-  i32 ret = 0;
+  if (k < c[0][0]) {
+    cout << -1 << endl;
+    return 0;
+  }
+
+  unordered_map<i32, vi32> p;
+  REP(i, 0, m) {
+    i32 x, y;
+    cin >> x >> y;
+    p[x].push_back(y);
+  }
+  // Calc order for the castlers.
+
+  vector<vi32> dp;
+  dp.push_back({0});
   REP(i, 0, n) {
-    i32 c;
-    cin >> c;
-    v[i] -= c;
-    if (v[i] > 0) ret += v[i];
+    if (c[i][0] > wTotal[i]) {
+      cout << -1 << endl;
+      return 0;
+    }
+    i32 choiceCount = min(i + 1, wTotal[i] - c[i][0]);
+    for (i32 i = 0; i < choiceCount; i++) {
+      // Have to make the choice based on whether there are portals.
+
+    }
   }
-  cout << ret << endl;
 }

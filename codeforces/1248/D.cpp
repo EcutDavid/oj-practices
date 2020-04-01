@@ -19,15 +19,22 @@ typedef deque<i32> di32;
 #define TR(c, it) for (auto(it) = (c).begin(); (it) != (c).end(); (it)++)
 #define MAX_PRECISION cout << setprecision(numeric_limits<double>::max_digits10);
 
+bool isCorrect(string & s) {
+  i32 open = 0, close = 0;
+  for (char c : s) {
+    open += c == '(';
+    close += c == ')';
+    if (close > open) return false;
+  }
+  return true;
+}
+
 i32 main() {
   ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
-  i32 n, k;
-  string str;
-  cin >> n >> str >> k;
 
-  string ret;
-  REP(i, 0, n) {
-    ret += str[i] == str[k - 1] ? str[i] : '*';
-  }
-  cout << ret << endl;
+  i32 n;
+  cin >> n;
+  string s;
+  cin >> s;
+
 }

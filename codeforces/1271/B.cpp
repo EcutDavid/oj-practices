@@ -23,21 +23,38 @@ i32 main() {
   ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
 
   i32 n;
-  string s;
-  cin >> n >> s;
-  // White at the beginning, black at the end.
-  vi32 bPrefix(n + 1);
-  REP(i, 1, n + 1) {
-    bPrefix[i] = bPrefix[i - 1];
-    bPrefix[i] += s[i - 1] == '#' ? 1 : 0;
-  }
-  i32 bTotal = bPrefix[n];
+  string target;
+  cin >> n >> target;
 
-  i32 ret = n - bTotal;  // All black
-  REP(i, 0, n) {
-    i32 blackToWhite = bPrefix[i + 1];
-    i32 whiteToBlack = n - i - 1 - (bTotal - bPrefix[i + 1]);
-    ret = min(ret, blackToWhite + whiteToBlack);
+  i32 bCount = 0, wCount = 0;
+  for (char c : target) {
+    bCount += c == 'B';
+    wCount += c == 'W';
   }
+
+  // If both of the count are odd, it's impossible to win.
+  if ((bCount % 2) && (wCount % 2)) {
+    cout << -1 << endl;
+    return 0;
+  }
+
+  // If bCount is odd, our goal is to make every W become B.
+  char finalC = bCount % 2 ? 'B' : 'W';
+  i32 ret = 0;
+  vi32 posArr;
+  for (i32 i = 1; i < n; i++) {
+    if (target[i - 1] != finalC) {
+      posArr.push_back(i);
+      target[i - 1] = target[i - 1] == 'W' ? 'B' : 'W';
+      target[i] = target[i] == 'W' ? 'B' : 'W';
+      ret++;
+    }
+  }
+
   cout << ret << endl;
+  if (posArr.size() == 0) return 0;
+  for (i32 i = 0; i < posArr.size(); i++) {
+    cout << (i > 0 ? " " : "") << posArr[i];
+  }
+  cout << endl;
 }

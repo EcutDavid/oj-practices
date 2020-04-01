@@ -21,26 +21,4 @@ typedef deque<i32> di32;
 
 i32 main() {
   ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
-
-  i32 n;
-  cin >> n;
-  vector<i64> v(n);
-  REP(i, 0, n) {
-    cin >> v[i];
-  }
-
-  vector<pair<i64, i64>> m(n - 1);
-  m[0].first = v[0] + v[1];
-  m[0].second = -m[0].first;
-
-  REP(i, 1, n - 1) {
-    m[i].first = max(m[i - 1].first, m[i - 1].second) + v[i + 1];
-    m[i].second = max(
-        m[i - 1].first - 2 * v[i],
-        m[i - 1].second + 2 * v[i]);
-    ;
-    m[i].second -= v[i + 1];
-  }
-  cout << max(m[n - 2].first, m[n - 2].second) << endl;
-  return 0;
 }

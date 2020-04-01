@@ -21,15 +21,23 @@ typedef deque<i32> di32;
 
 i32 main() {
   ios::sync_with_stdio(false);  // Makes IO faster, remove this line if C style scanf/printf needed.
+  i32 n;
+  cin >> n;
 
-  i32 a, b, c;
-  cin >> a >> b >> c;
-  bool works = true;
-  if (a > c && b > c) {
-    works = false;
+  vector<i64> a(n);
+  REP(i, 0, n) {
+    cin >> a[i];
   }
-  if (a < c && b < c) {
-    works = false;
+  sort(all(a));
+  i64 w = 0;
+  i64 h = 0;
+
+  if (n % 2) {
+    w += a[n / 2];
   }
-  cout << (works ? "Yes" : "No") << endl;
+  REP(i, 0, n / 2) {
+    w += a[n - 1 - i];
+    h += a[i];
+  }
+  cout << w * w + h * h << "\n";
 }
