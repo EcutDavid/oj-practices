@@ -7,8 +7,6 @@
 *.swo
 *.swn
 
-.vscode
-
 .DS_Store
 random_local*
 *testing_tool.py
